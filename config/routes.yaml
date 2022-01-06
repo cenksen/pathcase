@@ -1,3 +1,37 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+register:
+  path: api/register
+  controller: App\Controller\AuthController::register
+  methods: POST
+
+user_list:
+  path: /api/users
+  controller: App\Controller\UserController:indexAction
+  methods: [ GET ]
+
+api_login_check:
+  path: /api/login_check
+  controller: App\Controller\AuthController::getTokenUser
+
+order_list:
+  path: /api/orders
+  controller: App\Controller\OrderController:listOrders
+  methods: [ GET ]
+
+order:
+  path: /api/order/{id}
+  controller: App\Controller\OrderController:listOrder
+  methods: [ GET ]
+
+order_create:
+  path: /api/order/create
+  controller: App\Controller\OrderController:createOrder
+  methods: [ POST ]
+
+order_update:
+  path: /api/order/update/{id}
+  controller: App\Controller\OrderController:updateOrder
+  methods: [ POST ]
+
+test:
+  path: /api/test
+  controller: App\Controller\ApiController::test
