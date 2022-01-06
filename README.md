@@ -22,17 +22,7 @@ Open up your terminal and project directory
     
     composer install
 
-    php bin/console doctrine:fixtures:load
-
-    /*
-    This code generete 3 random user 
-    with different mail and passwords
-
-    Example : 
-        Mail : johndoe@abccompany.com
-        Password : john123 
-    
-**Important** : Password always firstname123
+   
  
 
 
@@ -45,6 +35,21 @@ In your terminal to create databases and migrations
     php bin/console doctrine:database:create
 
 	php bin/console doctrine:migrations:migrate
+    
+     php bin/console doctrine:fixtures:load
+    
+     /*
+    Last code will generete 3 random user 
+    with different mail and passwords
+
+    Example : 
+        Mail : johndoe@abccompany.com
+        Password : john123 
+    */
+
+**Important** : Password always firstname123
+
+
 
 You can import **path-case-insomnia.json** in your home directory file into any API / REST Development Tool you are using.
 I personally used [Insomnia](https://insomnia.rest/download)
