@@ -10,8 +10,8 @@ This project has been prepared for the PATH Product and Software company for cas
    - [Examples](#examples)
 
 # Prerequisites
-PHP 7.2.5+
-Composer
+PHP 7.2.5+ <br>
+Composer <br>
 Symfony 5.3.*
 
 ## Installing and running
@@ -36,7 +36,7 @@ In your terminal to create databases and migrations
 
 	php bin/console doctrine:migrations:migrate
     
-     php bin/console doctrine:fixtures:load
+    php bin/console doctrine:fixtures:load
     
      /*
     Last code will generete 3 random user 
