@@ -54,18 +54,20 @@ In your terminal to create databases and migrations
 You can import **path-case-insomnia.json** in your home directory file into any API / REST Development Tool you are using.
 I personally used [Insomnia](https://insomnia.rest/download)
 ## Docker Install
-Burak
+After you installed project 
 
-    git clone https://github.com/UngratefulRaven/pathcase.git
-   
-    
+    docker-compose up -d --build
 
-Edit .env add your database to 
 
-    DATABASE_URL="mysql://db_username:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
+    pathcase_nginx_1 is up-to-date
+    pathcase_php_1 is up-to-date
+    Creating pathcase_mysql_1 ... done
 
-docker-compose build
-docker-compose up
+After you get this message
+
+`docker exec -it  pathcase_php_1 bash`
+
+You can access to our container
 
 ## Examples
 
